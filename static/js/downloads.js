@@ -16,3 +16,6 @@ const toogleMenu = () => {
 	const abuttom = document.querySelectorAll('.fixed-action-btn');
     M.FloatingActionButton.init(abuttom);
 
+	// crouasel
+	const crouasel = document.querySelectorAll('.carousel');
+    M.Carousel.init(crouasel);
