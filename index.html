@@ -11,6 +11,7 @@
   <meta content="utf-8" http-equiv="encoding">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link href="https://fonts.googleapis.com/css?family=Product+Sans" rel="stylesheet" type="text/css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
@@ -34,7 +35,6 @@
     <div class="nav-wrapper">
       <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large left"><i
           class="material-icons left">menu</i></a>
-      <a onclick="toogleMenu()" class="sidenav-trigger show-on-large right"><i class="settings material-icons">color_lens</i></a>
     </div>
   </nav>
 </div>
@@ -65,8 +65,8 @@
             </div>
           </li>
       </ul>
-    </div>
   </ul>
+</div>
   <!-- END NAVBAR -->
 
   <!-- SETTINGS BUTTON -->
@@ -118,9 +118,8 @@
 		<div class="container center">
 			<div class="builds cardColor z-depth-1" style="margin-bottom: 12px;">
 				
-					<h1 class="accent welcome">Welcome To KryPtoN Project!</h1>
+					<h2 class="accent welcome">Welcome To KryPtoN Project!</h2>
 					<p class="lead">Try to meet your mobile needs</p>
-					<a class="waves-effect waves-light btn-small"><i class="material-icons left">file_download</i>Download</a>
 
 			</div>
 		</div>
@@ -131,11 +130,11 @@
 		<h3 class="accent">About</h3>
 		<h6>Krypton Project is an AOSP/CAF based Kernel</h6>
 		<h6>Our mission is to offer gaming performance and </h6>
-    <h6>battery efficiency</h6>
+        <h6>battery efficiency</h6>
 
 		<h3 class="accent">Did you like the project?</h3>
 		<p>Show your support by donating</p>
-		<a class="accent waves-effect waves-light btn-small"><i class="material-icons left">cloud</i>Download</a>
+  <a class="waves-effect waves-light btn-small" href="https://paypal.me/dhimasgaming" target="_blank"><i class="zmdi zmdi-paypal-alt left"></i>Paypal</a>
 
 </div>
 </div>
@@ -146,6 +145,46 @@
 
 </div>
 </div>
+
+<!--Fload Buttom-->
+  
+  <div class="fixed-action-btn">
+	<a class="btn-floating btn-large transparent">
+	  <i class="large material-icons">mode_edit</i>
+	</a>
+	<ul>
+	  <li><a onclick="toogleMenu()" class="btn-floating transparent"><i class="settings material-icons">color_lens</i></a></li>
+	  <li><a class="btn-floating transparent"><i class="material-icons">play_circle_outline</i></a></li>
+	  </ul>
+  </div>
+  
+  <!--End-->
+
+  <footer class="page-footer builds cardColor z-depth-1">
+	<div class="container">
+	  <div class="row">
+		<div class="col l6 s12">
+		  <h5 class="accent">KryPtoN Project</h5>
+		  <p>Try to meet your mobile needs.</p>
+		</div>
+		<div class="col l4 offset-l2 s12">
+		  <h5>Links</h5>
+		  <ul>
+			<li><a href="#!">Link 1</a></li>
+			<li><a href="#!">Link 2</a></li>
+			<li><a href="#!">Link 3</a></li>
+			<li><a href="#!">Link 4</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
+	<div class="footer-copyright">
+	  <div class="container accent">
+		© 2019 | KryPtoN Project
+		<a class="right" href="#!">More Links</a>
+	  </div>
+	</div>
+  </footer>
   <!-- END WELCOME -->
 
 </body>
