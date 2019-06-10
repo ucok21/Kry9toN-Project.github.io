@@ -2,6 +2,14 @@
 <html>
  <section id="header">
  </section>
+
+ <script src="https://code.jquery.com/jquery-3.4.1.js"
+	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	crossorigin="anonymous"></script>
+<script>
+	  $(function(){
+  $("#js").load("/_includes/js.html");
+});</script>
 <body>
   <section id="navbar">
   </section>
@@ -31,19 +39,6 @@
   <section id="footer">
   </section>
 </body>
-  <script src="https://code.jquery.com/jquery-3.4.1.js"
-	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-	crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="/static/js/downloads.js"></script>
-<script> 
-$(function(){
-  $("#header").load("/_includes/head.html");
-  $("#navbar").load("/_includes/navbar.html");
-  $("#button").load("/_includes/button.html");
-  $("#fload").load("/_includes/floadbutton.html");
-  $("#footer").load("/_includes/footer.html");
-});
-</script>
+  <section id="js">
+  </section>
 </html>
