@@ -1,6 +1,16 @@
+<script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="/static/js/downloads.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="/static/js/downloads.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.fixed-action-btn').floatingActionButton();
+    $('.collapsible').collapsible();
+  });
+  </script>
 <script> 
 $(function(){
   $("#header").load("/includes/head.html");

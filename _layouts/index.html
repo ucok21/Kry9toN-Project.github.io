@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
- <section id="header">
- </section>
+  {% include head.html %}
 <body>
-  <section id="navbar">
-  </section>
-  <section id="button">
-  </section>
+  {% include navbar.html %}
+  {% include button.html %}
 	<!-- WELCOME -->
 		<div class="container center">
 			<div class="builds cardColor z-depth-1" style="margin-bottom: 12px;">				
@@ -26,18 +23,8 @@
 </div>
 </div>
   <!-- END WELCOME -->
-  <section id="fload">
-  </section>
-  <section id="footer">
-  </section>
+  {% include floadbutton.html %}
+  {% include footer.html %}
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.js"
-	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-	crossorigin="anonymous"></script>
-<script>
-	  $(function(){
-  $("#js").load("/includes/js.html");
-});</script>
-  <section id="js">
-  </section>
+  {% include js.html %}
 </html>
