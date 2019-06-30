@@ -2,7 +2,6 @@
 layout: default
 title: Download Kernel
 ---
-<!-- DEVICE INFO CARD -->
     <h5 class="center upper-bold accent">Redmi 5 Plus Vince</h5>
       <div class="row limiter">
         <div class="col s12 m12">
@@ -34,9 +33,7 @@ title: Download Kernel
           </div>
         </div>
       </div>
-      <!-- END DEVICE INFO CARD -->
 
-      <!-- TABLE OF BUILDS -->
       <div class="row center">
           <div class="col s12 m12 center builds">
             <h5>Kernel 4.9</h5>
@@ -430,8 +427,6 @@ title: Download Kernel
     
               </div>
             </div>
-  
-        <!-- END TABLE OF BUILDS -->
 
 </div>
 
