@@ -428,5 +428,3 @@ title: Download Kernel
               </div>
             </div>
 
-</div>
-
