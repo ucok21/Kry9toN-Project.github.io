@@ -412,7 +412,7 @@ a, span {
     display:block;
     padding:5px;
     margin-top:5px;
-    max-height:600px;
+    max-height:250px;
     overflow-y:auto;
     overflow-x:scroll;
 }
