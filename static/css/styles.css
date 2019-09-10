@@ -407,3 +407,11 @@ a, span {
 .xda-buttons {
   padding-top: 5px;
 }
+
+.ad {
+    display:block;
+    padding:5px;
+    margin-top:5px;
+    width:300px;
+    height:100px;
+    overflow:scroll;
