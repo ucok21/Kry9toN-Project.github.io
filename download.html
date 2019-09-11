@@ -26,7 +26,7 @@ permalink : /kernel/vince/downloads/
     } 
     function download()
     { 
-        document.getElementById("link").innerHTML = "<a href='http://namasitus/filedownload' class='waves-effect waves-teal btn-flat'>Download</a>";
+        document.getElementById("link").innerHTML = "<div class='buildbuttons'><a href='http://namasitus/filedownload' class='waves-effect waves-teal btn-flat'><i class='zmdi zmdi-download left'></i>Download</a></div>";
     } 
    </script> 
 </head>
@@ -36,10 +36,7 @@ permalink : /kernel/vince/downloads/
 <h3 class="accent">File Download</h3><br />
 <h3>Link download akan muncul dalam <span id="timer"></span> detik.</h3> 
  
-      <span id="link">
-         <div class="buildbuttons">
-         </div>
-      </span>
+      <span id="link"></span>
    </div>
  
 </body>
