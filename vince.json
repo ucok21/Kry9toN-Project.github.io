@@ -73,7 +73,7 @@ permalink : /api/vince/
     {
       "name": "BLC AOSP4.9",
       "description": "<b>Only for <i>4.9</i></b>",
-      "url": "https://sourceforge.net/projects/krypton-project/files/KK%20Manager/ASOP-4.9/KryPtoN-Kernel-BLCv1.0-20190902-2133%20%281%29.zip/",
+      "url": "https://sourceforge.net/projects/krypton-project/files/KK%20Manager/ASOP-4.9/KryPtoN-Kernel-BLCv1.0-20190902-2133.zip/download",
       "md5sum": "6576a2303f7f4b31e0c31369742505fc",
       "changelog": [
         "Upstream to 4.9.190",
