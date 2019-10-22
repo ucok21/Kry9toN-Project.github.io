@@ -71,11 +71,28 @@ permalink : /api/vince/
   ],
   "downloads": [
     {
-      "name": "0.3.1",
-      "description": "<b>Only for <i>4.4</i> and <i>CM based ROMs</i></b>",
-      "url": "https://github.com/Grarak/grarak.github.io/raw/master/a5/0.3.1.img",
-      "md5sum": "02621769da1d5cc020c8ab503b20d797",
-      "install_method": "dd if=$FILE of=/dev/block/platform/msm_sdcc.1/by-name/boot",
+      "name": "BLC AOSP4.9",
+      "description": "<b>Only for <i>4.9</i></b>",
+      "url": "https://sourceforge.net/projects/krypton-project/files/KK%20Manager/ASOP-4.9/KryPtoN-Kernel-BLCv1.0-20190902-2133%20%281%29.zip/",
+      "md5sum": "6576a2303f7f4b31e0c31369742505fc",
+      "changelog": [
+        "switch to CAF kernel"
+      ]
+    },
+    {
+      "name": "PWR AOSP3.18",
+      "description": "<b>Only for <i>3.18</i></b>",
+      "url": "https://sourceforge.net/projects/krypton-project/files/KK%20Manager/ASOP-3.18/KryPtoN-PWR-20190405-2216.zip/download",
+      "md5sum": "c8db96a07d824ef2ad367c8164d31b71",
+      "changelog": [
+        "switch to CAF kernel"
+      ]
+    },
+    {
+      "name": "BLC MIUI",
+      "description": "<b>Only for <i>MIUI</i></b>",
+      "url": "https://sourceforge.net/projects/krypton-project/files/KK%20Manager/MIUI/KryPtoN-MIUI-20191015-1032.zip/download",
+      "md5sum": "51b6e4d3948dc27e9ecfd100b4dca133",
       "changelog": [
         "switch to CAF kernel"
       ]
