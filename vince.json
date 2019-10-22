@@ -47,7 +47,7 @@ permalink : /api/vince/
       ]
     },
     {
-      "name": "TCP Congestion Algorithm"
+      "name": "TCP Congestion Algorithm",
       "items": [
         "stunami",
         "reno",
@@ -67,7 +67,7 @@ permalink : /api/vince/
     "Sound Control",
     "Fast Change USB",
     "LMK",
-    "Etc.."
+    "Etc..."
   ],
   "downloads": [
     {
