@@ -48,7 +48,7 @@ permalink : /api/vince/
     },
     {
       "name": "TCP Congestion Algorithm"
-      "item": [
+      "item":  [
         "stunami",
         "reno",
         "bbr",
