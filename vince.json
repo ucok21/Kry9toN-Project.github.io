@@ -8,7 +8,6 @@ permalink : /api/vince/
   "long_description": "Welcome to <b>KryPtoN Kernel</b> Overclock Kernel And non Overclock kernel for you all",
   "logo": "https://avatars3.githubusercontent.com/u/44697929?s=460&v=4",
   "github": "https://github.com/Kry9toN",
-  "google_plus": "https://plus.google.com/u/0/101665005278935743165",
   "paypal": "https://paypal.me/dhimasgaming",
   "features": [
     "CAF Based and AOSP",
@@ -18,10 +17,13 @@ permalink : /api/vince/
       "name": "CPU Governors",
       "items": [
         "interactive",
-        "ondemand (default)",
+        "ondemand",
         "userspace",
         "powersave",
-        "performance"
+        "performance",
+        "pixel_smurfuil",
+        "lightningutil",
+        "Schedutil"
       ]
     },
     {
@@ -32,37 +34,31 @@ permalink : /api/vince/
         "userspace",
         "powersave",
         "performance",
-        "simple_ondemand"
+        "simple_ondemand",
+        "Etc..."
       ]
     },
     {
       "name": "I/O Schedulers",
       "items": [
         "noop",
-        "deadline",
-        "row",
         "cfq",
-        "bfq (default)",
-        "fiops",
-        "sio"
+        "bfq (default)"
       ]
     },
-    "LZ4",
-    "CSnappy compression/decompression",
+    {
+      
+    },
+    "CPU voltage",
     "exfat",
     "f2fs",
-    "Battery Control",
-    "Intelliplug (intelligent hotplug)",
-    "Frandom Support",
     "Vibration Control",
-    "MSM Kcal",
+    "Kcal",
     "zRam",
-    "ZCache",
     "Sound Control",
-    "Multicore Power Saving",
-    "Write Protection has been removed",
-    "Init.d scripts",
-    "Support for Synapse"
+    "Fast Change USB",
+    "LMK",
+    "Etc.."
   ],
   "downloads": [
     {
