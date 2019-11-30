@@ -12,7 +12,7 @@ permalink : /api/vince/
   "features": [
     "CAF Based and AOSP",
     "Linux Kernel 3.18 and 4.9",
-    "Build with GCC 10.0.0",
+    "Build with Clang 10.0.0 Nusantara Dev",
     {
       "name": "CPU Governors",
       "items": [
@@ -71,16 +71,14 @@ permalink : /api/vince/
   ],
   "downloads": [
     {
-      "name": "BLC AOSP4.9",
+      "name": "HCK AOSP4.9",
       "description": "<b>Only for <i>4.9</i></b>",
-      "url": "https://sourceforge.net/projects/krypton-project/files/KK%20Manager/ASOP-4.9/KryPtoN-Kernel-BLCv1.0-20190902-2133.zip/download",
-      "md5sum": "6576a2303f7f4b31e0c31369742505fc",
+      "url": "https://sourceforge.net/projects/krypton-project/files/KK%20Manager/ASOP-4.9/KryPtoN-AOSP4.9-20191118-2224.zip/download",
+      "md5sum": "395b3f6b2d603998d54cc17e6d8ef87a",
       "changelog": [
-        "Upstream to 4.9.190",
-        "Merge tag LA.UM.7.6.2.r1-09500-89xx.0",
-        "Merge tag LA.UM.7.8.c3-11700-QCS605.0",
-        "Improved Battery live",
-        "revert all OC"
+        "Initial build for nethunter",
+        "Support all wifi adaptor",
+        "Support monitor mode (on most WiFi adapters)"
       ]
     },
     {
