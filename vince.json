@@ -77,8 +77,9 @@ permalink : /api/vince/
       "md5sum": "395b3f6b2d603998d54cc17e6d8ef87a",
       "changelog": [
         "Initial build for nethunter",
-        "Support all wifi adaptor",
-        "Support monitor mode (on most WiFi adapters)"
+        "Support all wifi adapters",
+        "Support monitor mode (on most WiFi adapters)",
+        "Build with clang 10 Nusantara Dev"
       ]
     },
     {
