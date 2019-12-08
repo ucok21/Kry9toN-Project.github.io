@@ -31,82 +31,41 @@ permalink : /kernel/vince/miui/
 	</div>
   </div>
 
+{% for kernel in site.miui %}}
+      <div class="row center">
+          <div class="col s12 m12 center builds">
+              <ul class="collapsible collapsible-builds">
+				
+				<li class="active">
+				  <div class="collapsible-header">
+					<i class="material-icons">system_update</i>
+					<span style="width: 100%">{{kernel.name}}</span>
+					<i class="material-icons">arrow_drop_down</i>
+				  </div>
 
+				  <div class="collapsible-body">
 
-<div class="row center">
-  <div class="col s12 m12 center builds">
-	<ul class="collapsible collapsible-builds">
-	  
-	  <li class="active">
-		<div class="collapsible-header">
-		  <i class="material-icons">system_update</i>
-		  <span style="width: 100%">KryPtoN-MIUI-20191015-1032.zip</span>
-		  <i class="material-icons">arrow_drop_down</i>
-		</div>
+					<p class="label" >details</p>
+					<div class="buildinfo">
+					  <div class="deviceprop"><p>Filename: {{kernel.name}}</p></div>
+					  <div class="deviceprop"><p>Date: {{kernel.date}}</p></div>
+					  <div class="deviceprop"><p>Size: {{kernel.size}}</p></div>
+					  <div class="deviceprop"><p>Version: {{kernel.version}}</p></div>
+					</div>
 
-		<div class="collapsible-body">
-
-		  <p class="label" >details</p>
-		  <div class="buildinfo">
-			<div class="deviceprop"><p>Filename: KryPtoN-MIUI-20191015-1032.zip</p></div>
-			<div class="deviceprop"><p>Date: 2019/10/15</p></div>
-			<div class="deviceprop"><p>Size: 13.2 MB</p></div>
-			<div class="deviceprop"><p>Version: PWR</p></div>
-		  </div>
-
-		  <div class='buildChangelog'>
-			<p class="label">Changelog</p>
-			<pre>
-			  - Optmize audio codec!!
-			  - Add AutoSMP hotplug
-			  - Forgot some changes
-			</pre>
-		  </div>
-
-		  <div class="buildbuttons">
-			<a href="https://userupload.net/eq6nbugp9f15" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
-		  </div>
-
-		</div>
-
-	  </li>
-
-	  <li>
-		<div class="collapsible-header">
-		  <i class="material-icons">system_update</i>
-		  <span style="width: 100%">KryPtoN-MIUI-PWR-20190524-1349.zip</span>
-		  <i class="material-icons">arrow_drop_down</i>
-		</div>
-
-		<div class="collapsible-body">
-
-		  <p class="label" >details</p>
-		  <div class="buildinfo">
-			<div class="deviceprop"><p>Filename: KryPtoN-MIUI-PWR-20190524-1349.zip</p></div>
-			<div class="deviceprop"><p>Date: 2019/05/24</p></div>
-			<div class="deviceprop"><p>Size: 13.2 MB</p></div>
-			<div class="deviceprop"><p>Version: PWR</p></div>
-		  </div>
-
-		  <div class='buildChangelog'>
-			<p class="label">Changelog</p>
-			<pre>
-			  - OC CPU 2.2GHz 
-			  - OC GPU 750Mhz 
-			  - Upstream to 3.18.140
-			</pre>
-		  </div>
-
-		  <div class="buildbuttons">
-			<a href="https://userupload.net/rjv2fky9hlcu" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
-		  </div>
-
-		</div>
-
-	  </li>
-
-	</ul>
-
-  </div>
+					<div class='buildChangelog'>
+					  <p class="label">Changelog</p>
+					  <pre>
+						{{kernel.changelog}}
+					  </pre>
+					</div>
+					<div class="buildbuttons">
+					  <a href="{{kernel.link}}" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
+					</div>
+				  </div>
+				</li>
+                </ul>
+          </div>
+        </div>
 </div>
-</div>
+{% endfor %}

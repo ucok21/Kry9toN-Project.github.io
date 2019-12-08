@@ -31,166 +31,41 @@ permalink : /kernel/vince/3.18/
 	</div>
   </div>
 
-<div class="row center">
-  <div class="col s12 m12 center builds">
-	<ul class="collapsible collapsible-builds">
-	  <li class="active">
-		<div class="collapsible-header">
-		  <i class="material-icons">system_update</i>
-		  <span style="width: 100%">KryPtoN-PWR-20190405-2216.zip</span>
-		  <i class="material-icons">arrow_drop_down</i>
-		</div>
+{% for kernel in site.kernel318 %}}
+      <div class="row center">
+          <div class="col s12 m12 center builds">
+              <ul class="collapsible collapsible-builds">
+				
+				<li>
+				  <div class="collapsible-header">
+					<i class="material-icons">system_update</i>
+					<span style="width: 100%">{{kernel.name}}</span>
+					<i class="material-icons">arrow_drop_down</i>
+				  </div>
 
-		<div class="collapsible-body">
+				  <div class="collapsible-body">
 
-		  <p class="label" >details</p>
-		  <div class="buildinfo">
-			<div class="deviceprop"><p>Filename: KryPtoN-PWR-20190405-2216.zip</p></div>
-			<div class="deviceprop"><p>Date: 2019/04/05</p></div>
-			<div class="deviceprop"><p>Size: 11.6 MB</p></div>
-			<div class="deviceprop"><p>Version: PWR</p></div>
-		  </div>
+					<p class="label" >details</p>
+					<div class="buildinfo">
+					  <div class="deviceprop"><p>Filename: {{kernel.name}}</p></div>
+					  <div class="deviceprop"><p>Date: {{kernel.date}}</p></div>
+					  <div class="deviceprop"><p>Size: {{kernel.size}}</p></div>
+					  <div class="deviceprop"><p>Version: {{kernel.version}}</p></div>
+					</div>
 
-		  <div class='buildChangelog'>
-			<p class="label">Changelog</p>
-			<pre>
-			  - Upstream to 3.18.138 
-			  - Improve performance 
-			  - Add bfq I/O Scheduler and set default
-			</pre>
-		  </div>
-
-		  <div class="buildbuttons">
-			<a href="https://userupload.net/iskvh4uavq87" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
-		  </div>
-
-		</div>
-
-	  </li>
-
-	  <li>
-		<div class="collapsible-header">
-		  <i class="material-icons">system_update</i>
-		  <span style="width: 100%">KryPtoN-PWR-AOSP-Pie-vince-20190318-2134.zip</span>
-		  <i class="material-icons">arrow_drop_down</i>
-		</div>
-
-		<div class="collapsible-body">
-
-		  <p class="label" >details</p>
-		  <div class="buildinfo">
-			<div class="deviceprop"><p>Filename: KryPtoN-PWR-AOSP-Pie-vince-20190318-2134.zip</p></div>
-			<div class="deviceprop"><p>Date: 2019/03/18</p></div>
-			<div class="deviceprop"><p>Size: 11.6 MB</p></div>
-			<div class="deviceprop"><p>Version: PWR</p></div>
-		  </div>
-
-		  <div class='buildChangelog'>
-			<p class="label">Changelog</p>
-			<pre>
-			  - lastest linux version and CAF tags 
-			  - add scaling governor : 
-			  * Alucard 
-			  * Electron 
-			  * Darkness (Not set by default) 
-			  - add KSM and UKSM 
-			  - add Klapse 
-			  - add Adreno idler 
-			  - TCP algorithm westwood 
-			  - better performance 
-			  - adaptive LMK 
-			  - sound control 
-			  - screen LED control 
-			  - add fingerprint boost driver 
-			  - add implementation DTS headphone:X
-			  Keep fiture :
-
-			  - OC CPU 200Mhz 
-			  - Input bost CPU 
-			  - Hotplug AutoSMP enable by default
-			</pre>
-		  </div>
-
-		  <div class="buildbuttons">
-			<a href="https://userupload.net/dn01w3dxla1q" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
-		  </div>
-
-		</div>
-
-	  </li>
-
-	  <li>
-		<div class="collapsible-header">
-		  <i class="material-icons">system_update</i>
-		  <span style="width: 100%">KryPtoN-PWR-AOSP-Pie-vince-20190310-2248.zip</span>
-		  <i class="material-icons">arrow_drop_down</i>
-		</div>
-
-		<div class="collapsible-body">
-
-		  <p class="label" >details</p>
-		  <div class="buildinfo">
-			<div class="deviceprop"><p>Filename: KryPtoN-PWR-AOSP-Pie-vince-20190310-2248.zip</p></div>
-			<div class="deviceprop"><p>Date: 2019/03/10</p></div>
-			<div class="deviceprop"><p>Size: 11.6 MB</p></div>
-			<div class="deviceprop"><p>Version: PWR</p></div>
-		  </div>
-
-		  <div class='buildChangelog'>
-			<p class="label">Changelog</p>
-			<pre>
-			  - Hotplug 
-			  - OC GPU (725MHz) maybe not working 
-			  - OC CPU (200MHz)
-			</pre>
-		  </div>
-
-		  <div class="buildbuttons">
-			<a href="https://userupload.net/abilcei9l8ak" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
-		  </div>
-
-		</div>
-
-	  </li>
-
-	  <li>
-		<div class="collapsible-header">
-		  <i class="material-icons">system_update</i>
-		  <span style="width: 100%">KryPtoN_-BLC-Pie-vince-20190217-1014.zip</span>
-		  <i class="material-icons">arrow_drop_down</i>
-		</div>
-
-		<div class="collapsible-body">
-
-		  <p class="label" >details</p>
-		  <div class="buildinfo">
-			<div class="deviceprop"><p>Filename: KryPtoN_-BLC-Pie-vince-20190217-1014.zip</p></div>
-			<div class="deviceprop"><p>Date: 2019/02/17</p></div>
-			<div class="deviceprop"><p>Size: 11.6 MB</p></div>
-			<div class="deviceprop"><p>Version: BLC</p></div>
-		  </div>
-
-		  <div class='buildChangelog'>
-			<p class="label">Changelog</p>
-			<pre>
-			  - Hotplug 
-			  - Merge latestes LA.UM.7.6.r1.04100-89xx.0 
-			  - Base latest pie-caf 
-			  - devfreq boost driver 
-			  - forgot change
-			</pre>
-		  </div>
-
-		  <div class="buildbuttons">
-			<a href="https://userupload.net/jojeusvf27ul" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
-		  </div>
-
-		</div>
-
-	  </li>
-
-	</ul>
-
-  </div>
+					<div class='buildChangelog'>
+					  <p class="label">Changelog</p>
+					  <pre>
+						{{kernel.changelog}}
+					  </pre>
+					</div>
+					<div class="buildbuttons">
+					  <a href="{{kernel.link}}" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
+					</div>
+				  </div>
+				</li>
+                </ul>
+          </div>
+        </div>
 </div>
-</div>
+{% endfor %}

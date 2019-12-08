@@ -31,18 +31,15 @@ permalink : /kernel/vince/4.9/
         </div>
       </div>
 
-<div class="container">
-<script data-cfasync='false' type='text/javascript' src='//p366406.clksite.com/adServe/banners?tid=366406_718438_1'></script>
-</div>
-
-      <div class="row center">
+{% for kernel in site.kernel49 %}}
+      <div>
           <div class="col s12 m12 center builds">
               <ul class="collapsible collapsible-builds">
 				
 				<li class="active">
 				  <div class="collapsible-header">
 					<i class="material-icons">system_update</i>
-					<span style="width: 100%">KryPtoN-AOSP4.9-Nethunter-20191118-2224.zip</span>
+					<span style="width: 100%">{{kernel.name}}</span>
 					<i class="material-icons">arrow_drop_down</i>
 				  </div>
 
@@ -50,281 +47,25 @@ permalink : /kernel/vince/4.9/
 
 					<p class="label" >details</p>
 					<div class="buildinfo">
-					  <div class="deviceprop"><p>Filename: KryPtoN-AOSP4.9-Nethunter-20191118-2224.zip</p></div>
-					  <div class="deviceprop"><p>Date: 2019/11/18</p></div>
-					  <div class="deviceprop"><p>Size: 14.4 MB</p></div>
-					  <div class="deviceprop"><p>Version: HCK</p></div>
+					  <div class="deviceprop"><p>Filename: {{kernel.name}}</p></div>
+					  <div class="deviceprop"><p>Date: {{kernel.date}}</p></div>
+					  <div class="deviceprop"><p>Size: {{kernel.size}}</p></div>
+					  <div class="deviceprop"><p>Version: {{kernel.version}}</p></div>
 					</div>
 
 					<div class='buildChangelog'>
 					  <p class="label">Changelog</p>
 					  <pre>
-						- Initial build for Nethunter
-						- Support WiFi adapters
-						- Support monitor mode (In some WiFi adapters)
-                                                - Build wiht Clang 10 Nusantara Dev
+						{{kernel.changelog}}
 					  </pre>
 					</div>
-
 					<div class="buildbuttons">
-					  <a href="https://userupload.net/jmm311ntp00o" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
+					  <a href="{{kernel.link}}" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
 					</div>
-
 				  </div>
-
 				</li>
-
-                                <li>
-				  <div class="collapsible-header">
-					<i class="material-icons">system_update</i>
-					<span style="width: 100%">KryPtoN-Kernel-BLCv1.0-20190902-2133.zip</span>
-					<i class="material-icons">arrow_drop_down</i>
-				  </div>
-
-				  <div class="collapsible-body">
-
-					<p class="label" >details</p>
-					<div class="buildinfo">
-					  <div class="deviceprop"><p>Filename: KryPtoN-Kernel-BLCv1.0-20190902-2133.zip</p></div>
-					  <div class="deviceprop"><p>Date: 2019/09/02</p></div>
-					  <div class="deviceprop"><p>Size: 14.5 MB</p></div>
-					  <div class="deviceprop"><p>Version: BLC</p></div>
-					</div>
-
-					<div class='buildChangelog'>
-					  <p class="label">Changelog</p>
-					  <pre>
-						- Upstream to 4.9.190
-						- Merge tag LA.UM.7.6.2.r1-09500-89xx.0
-						- Merge tag LA.UM.7.8.c3-11700-QCS605.0
-						- Improved Battery live
-						- revert all OC
-					  </pre>
-					</div>
-
-					<div class="buildbuttons">
-					  <a href="https://userupload.net/mn88hgc1smc7" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
-					</div>
-
-				  </div>
-
-				</li>
-				
-				<li>
-				  <div class="collapsible-header">
-					<i class="material-icons">system_update</i>
-					<span style="width: 100%">KryPtoN-Kernel-20190709-1454.zip</span>
-					<i class="material-icons">arrow_drop_down</i>
-				  </div>
-
-				  <div class="collapsible-body">
-
-					<p class="label" >details</p>
-					<div class="buildinfo">
-					  <div class="deviceprop"><p>Filename: KryPtoN-Kernel-20190709-1454.zip</p></div>
-					  <div class="deviceprop"><p>Date: 2019/07/09</p></div>
-					  <div class="deviceprop"><p>Size: 14.5 MB</p></div>
-					  <div class="deviceprop"><p>Version: PWR</p></div>
-					</div>
-
-					<div class='buildChangelog'>
-					  <p class="label">Changelog</p>
-					  <pre>
-						- Upstream to 4.9.184
-						- Merge tag LA.UM.7.6.2.r1-09200-89xx.0
-						- Improved stability omni sensor thanks @laststandrighthere
-						- add State notifier
-						- Add GOV lightningutil
-						- Add GOV pixel smurftil
-					  </pre>
-					</div>
-
-					<div class="buildbuttons">
-					  <a href="https://userupload.net/mvll267nq07a" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
-					</div>
-
-				  </div>
-
-				</li>
-				
-				<li>
-				  <div class="collapsible-header">
-					<i class="material-icons">system_update</i>
-					<span style="width: 100%">KryPtoN-PWR-20190604-1758.zip</span>
-					<i class="material-icons">arrow_drop_down</i>
-				  </div>
-
-				  <div class="collapsible-body">
-
-					<p class="label" >details</p>
-					<div class="buildinfo">
-					  <div class="deviceprop"><p>Filename: KryPtoN-PWR-20190604-1758.zip</p></div>
-					  <div class="deviceprop"><p>Date: 2019/06/04</p></div>
-					  <div class="deviceprop"><p>Size: 14.5 MB</p></div>
-					  <div class="deviceprop"><p>Version: PWR</p></div>
-					</div>
-
-					<div class='buildChangelog'>
-					  <p class="label">Changelog</p>
-					  <pre>
-						- Upstream to 4.9.180
-						- Merge tag LA.UM.7.6.2.r1-08700-89xx.0
-						- Update sound control
-						- add DTS:X Ultra
-						- I'm forgot
-					  </pre>
-					</div>
-
-					<div class="buildbuttons">
-					  <a href="https://userupload.net/3oyxpso563eg" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
-					</div>
-
-				  </div>
-
-				</li>
-
-                      <li>
-                        <div class="collapsible-header">
-                          <i class="material-icons">system_update</i>
-                          <span style="width: 100%">KryPtoN-PWR-20190501-2028.zip</span>
-                          <i class="material-icons">arrow_drop_down</i>
-                        </div>
-
-                        <div class="collapsible-body">
-
-                            <p class="label" >details</p>
-                            <div class="buildinfo">
-                                <div class="deviceprop"><p>Filename: KryPtoN-PWR-20190501-2028.zip</p></div>
-                                <div class="deviceprop"><p>Date: 2019/05/01</p></div>
-                                <div class="deviceprop"><p>Size: 14.4 MB</p></div>
-                                <div class="deviceprop"><p>Version: PWR</p></div>
-                            </div>
-
-                            <div class='buildChangelog'>
-                              <p class="label">Changelog</p>
-                                <pre>
-                                    - Upstream to 4.9.170 
-                                    - Add TCP congestion algorithm tsunami and scrable_re. tsunami is set to default 
-                                    - improve performance
-                                </pre>
-                            </div>
-
-                            <div class="buildbuttons">
-							  <a href="https://userupload.net/cuan8f7psg7y" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
-                            </div>
-
-                        </div>
-
-                      </li>
-
-                      <li>
-                          <div class="collapsible-header">
-                            <i class="material-icons">system_update</i>
-                            <span style="width: 100%">KryPtoN-PWR-20190422-1034.zip</span>
-                            <i class="material-icons">arrow_drop_down</i>
-                          </div>
-  
-                          <div class="collapsible-body">
-  
-                              <p class="label" >details</p>
-                              <div class="buildinfo">
-                                  <div class="deviceprop"><p>Filename: KryPtoN-PWR-20190422-1034.zip</p></div>
-                                  <div class="deviceprop"><p>Date: 2019/04/22</p></div>
-                                  <div class="deviceprop"><p>Size: 14.5 MB	</p></div>
-                                  <div class="deviceprop"><p>Version: PWR</p></div>
-                              </div>
-  
-                              <div class='buildChangelog'>
-                                <p class="label">Changelog</p>
-                                  <pre>
-                                      - Upstream to 4.9.171 
-                                      - Add usb fast charge mode 
-                                      - Enable intractive gov 
-                                      - I forgot other change
-                                  </pre>
-                              </div>
-  
-                              <div class="buildbuttons">
-								<a href="https://userupload.net/q0wbfcc18lzx" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
-                              </div>
-  
-                          </div>
-  
-                        </li>
-
-                        <li>
-                            <div class="collapsible-header">
-                              <i class="material-icons">system_update</i>
-                              <span style="width: 100%">KryPtoN-PWR-20190418-2250.zip</span>
-                              <i class="material-icons">arrow_drop_down</i>
-                            </div>
-    
-                            <div class="collapsible-body">
-    
-                                <p class="label" >details</p>
-                                <div class="buildinfo">
-                                    <div class="deviceprop"><p>Filename: KryPtoN-PWR-20190418-2250.zip</p></div>
-                                    <div class="deviceprop"><p>Date: 2019/04/18</p></div>
-                                    <div class="deviceprop"><p>Size: 14.3 MB</p></div>
-                                    <div class="deviceprop"><p>Version: PWR</p></div>
-                                </div>
-    
-                                <div class='buildChangelog'>
-                                  <p class="label">Changelog</p>
-                                    <pre>
-                                        - Upstream to 4.9.170 
-                                        - Add TCP congestion algorithm tsunami and scrable_re. tsunami is set to default 
-                                        - improve performance
-                                    </pre>
-                                </div>
-    
-                                <div class="buildbuttons">
-								  <a href="https://userupload.net/i6cubdnid2gc" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
-                                </div>
-    
-                            </div>
-    
-                          </li>
-
-                          <li>
-                              <div class="collapsible-header">
-                                <i class="material-icons">system_update</i>
-                                <span style="width: 100%">KryPtoN-PWR-Pie-vince-20190303-1118.zip</span>
-                                <i class="material-icons">arrow_drop_down</i>
-                              </div>
-      
-                              <div class="collapsible-body">
-      
-                                  <p class="label" >details</p>
-                                  <div class="buildinfo">
-                                      <div class="deviceprop"><p>Filename: KryPtoN-PWR-Pie-vince-20190303-1118.zip</p></div>
-                                      <div class="deviceprop"><p>Date: 2019/03/03</p></div>
-                                      <div class="deviceprop"><p>Size: 13.4 MB</p></div>
-                                      <div class="deviceprop"><p>Version: PWR</p></div>
-                                  </div>
-      
-                                  <div class='buildChangelog'>
-                                    <p class="label">Changelog</p>
-                                      <pre>
-                                          - Merge tag 'LA.UM.7.6.2.r1-07100-89xx.0' 
-                                          - CPU input boost 
-                                          - Fast charging 
-                                          - OC GPU (725MHz) 
-                                          - OC CPU (500MHz)
-                                      </pre>
-                                  </div>
-      
-                                  <div class="buildbuttons">
-									<a href="https://userupload.net/etwcwsp5tlef" download target="_blank" class="waves-effect waves-teal btn-flat"><i class="zmdi zmdi-download left"></i>Download</a>
-                                  </div>
-      
-                              </div>
-      
-                            </li>
-
                 </ul>
-
           </div>
         </div>
-
 </div>
+{% endfor %}
