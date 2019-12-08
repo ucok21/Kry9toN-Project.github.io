@@ -31,11 +31,10 @@ permalink : /kernel/vince/miui/
 	</div>
   </div>
 
-{% for kernel in site.miui %}}
       <div class="row center">
           <div class="col s12 m12 center builds">
               <ul class="collapsible collapsible-builds">
-				
+			{% for kernel in site.miui %}}
 				<li class="active">
 				  <div class="collapsible-header">
 					<i class="material-icons">system_update</i>
@@ -64,8 +63,8 @@ permalink : /kernel/vince/miui/
 					</div>
 				  </div>
 				</li>
+                       {% endfor %} 
                 </ul>
           </div>
         </div>
 </div>
-{% endfor %}
