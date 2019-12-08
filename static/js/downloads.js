@@ -17,7 +17,7 @@ const toogleMenu = () => {
     M.FloatingActionButton.init(abuttom);
 
     // Image
-    const slider = document.querySelectorAll('.slider'
+    const slider = document.querySelectorAll('.slider');
     M.Slider.init.(slider, {
     height: 500,
     transition: 600,
