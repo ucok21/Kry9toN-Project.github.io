@@ -11,8 +11,15 @@ const toogleMenu = () => {
     // init sidenav
     const sidenav = document.querySelectorAll('.sidenav');
     M.Sidenav.init(sidenav);
-	
-	// fload buttom
-	const abuttom = document.querySelectorAll('.fixed-action-btn');
+
+    // fload buttom
+    const abuttom = document.querySelectorAll('.fixed-action-btn');
     M.FloatingActionButton.init(abuttom);
 
+    // Image
+    const slider = document.querySelectorAll('.slider'
+    M.Slider.init.(slider, {
+    height: 500,
+    transition: 600,
+    interval: 3000
+    });
