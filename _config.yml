@@ -35,6 +35,7 @@ collections:
     kernel49:
     kernel318:
     miui:
+    donate:
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

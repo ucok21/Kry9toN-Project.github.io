@@ -1,0 +1,30 @@
+---
+layout: default
+title: Donate
+permalink : /donate
+---
+<div>
+  <h5 class="center upper-bold accent">Redmi 5 Plus Vince</h5>
+  </div>
+
+      <div class="row center">
+          <div class="col s12 m12 center builds">
+              <ul class="collapsible collapsible-builds">
+			{% for donate in site.donate %}
+				<li>
+				  <div class="collapsible-header">
+					<i class="material-icons">system_update</i>
+					<span style="width: 100%">{{doante.title}}</span>
+					<i class="material-icons">arrow_drop_down</i>
+				  </div>
+
+				  <div class="collapsible-body">
+					<p>QR Code</p>
+                    <img src="{{doante.image}}" herf="{{donate.url}}">
+				  </div>
+				</li>
+                       {% endfor %}
+                </ul>
+          </div>
+        </div>
+</div>
