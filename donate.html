@@ -3,28 +3,50 @@ layout: default
 title: Donate
 permalink : /donate
 ---
-<div>
-  <h5 class="center upper-bold accent">Redmi 5 Plus Vince</h5>
-  </div>
+<h5 class="center upper-bold accent">Donate For KryPtoN kernel and Komodo OS</h5>
 
       <div class="row center">
           <div class="col s12 m12 center builds">
               <ul class="collapsible collapsible-builds">
-			{% for donate in site.donate %}
+                        <h5 class="center upper-bold accent">Internasional</h5>
 				<li>
 				  <div class="collapsible-header">
-					<i class="material-icons">system_update</i>
+					<i class="material-icons">payment</i>
+					<span style="width: 100%">Paypal</span>
+					<i class="material-icons">arrow_drop_down</i>
+				  </div>
+
+				  <div class="collapsible-body">
+			              <p>Link Paypal click here</p>
+                                      <img src="http://clipart-library.com/images_k/paypal-donate-button-transparent/paypal-donate-button-transparent-7.png" herf="https://www.paypal.me/KomodoOS" style="width: 300px; height: 100px;">
+				  </div>
+				</li>
+                </ul>
+          </div>
+        </div>
+
+      <div class="row center">
+          <div class="col s12 m12 center builds">
+              <ul class="collapsible collapsible-builds">
+			{% for indonate in site.donate %}
+                        <h5 class="center upper-bold accent">Local donate (Indonesia)</h5>
+				<li>
+				  <div class="collapsible-header">
+					<i class="material-icons">payment</i>
 					<span style="width: 100%">{{doante.title}}</span>
 					<i class="material-icons">arrow_drop_down</i>
 				  </div>
 
 				  <div class="collapsible-body">
-					<p>QR Code</p>
-                    <img src="{{doante.image}}" herf="{{donate.url}}">
+				       <p>{{donate.method}}</p>
+                                       <br>
+                                       <p>{{donate.info}}</p>
+                                       <img src="{{doante.image}}" herf="{{donate.url}}">
 				  </div>
 				</li>
                        {% endfor %}
                 </ul>
           </div>
         </div>
+
 </div>
