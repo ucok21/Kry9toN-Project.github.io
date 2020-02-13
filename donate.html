@@ -44,9 +44,13 @@ permalink : /donate
 				       <p class="label" >{{donate.method}}</p>
                                        <p>{{donate.info}}</p>
                                        <p>{{donate.info2}}</p>
+                                       {% if donate.url %}
                                        <a href="{{donate.url}}">
+                                       {% endif %}
+                                       {% if donate.image %}
                                        <img src="{{doante.image}}">
                                        </a>
+                                       {% endif %}
 				  </div>
 				</li>
                        {% endfor %}
