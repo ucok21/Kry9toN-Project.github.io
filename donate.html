@@ -36,14 +36,16 @@ permalink : /donate
 				<li>
 				  <div class="collapsible-header">
 					<i class="material-icons">payment</i>
-					<span style="width: 100%">{{doante.title}}</span>
+					<span style="width: 100%">{{donate.title}}</span>
 					<i class="material-icons">arrow_drop_down</i>
 				  </div>
 
 				  <div class="collapsible-body">
 				       <p class="label" >{{donate.method}}</p>
+                                       <div class="deviceprop">
                                        <p>{{donate.info}}</p>
                                        <p>{{donate.info2}}</p>
+                                       </div>
                                        {% if donate.url %}
                                        <a href="{{donate.url}}">
                                        <img src="{{donate.image}}">
